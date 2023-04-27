@@ -5,7 +5,7 @@ export enum AttributeMenu {
     "profile" = "profile"
 }
 
-export default class Menu extends HTMLElement{
+class Menu extends HTMLElement{
     home?: string;
     search?: string;
     add?: string;
@@ -32,8 +32,8 @@ export default class Menu extends HTMLElement{
 
     attributeChangedCallback(
         propName: AttributeMenu,
-        _: unknown,
-        newValue: string
+        _: string | undefined,
+        newValue: string | undefined
     ){
         switch(propName){
             default:
@@ -62,3 +62,4 @@ export default class Menu extends HTMLElement{
 }
 
 customElements.define("my-menu", Menu);
+export default Menu;
