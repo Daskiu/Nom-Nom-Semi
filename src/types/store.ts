@@ -1,22 +1,43 @@
-import { DataMenu, DataShape } from "./data"
+import { DataShape } from "./data"
 
 export type Observer = ({ render: () => void } & HTMLElement);
 
-export interface AppFood {
-  menu: DataMenu[];
+export interface AppState {
   shape: DataShape[];
+  user: { 
+    userName:string, 
+    email: string,
+  }
 }
 
-export enum StarFood {
-  GET = "GET",
+export enum AuthActions {
+  "LOGIN" = "LOGIN",
+  "LOGOUT" = "LOGOUT",
 }
 
-export interface GetStarFood {
-  type: StarFood.GET;
-  payload: {
-    menu: DataMenu[];
-    shape: DataShape[];
-  };
+export enum ShapeActions {
+  "ADD" = "ADD",
+  "GET" = "GET",
 }
 
-export type Action = GetStarFood;
+export interface LogInAction {
+  action: AuthActions.LOGIN,
+  payload: Pick<AppState, "user">
+}
+
+export interface LogOutAction {
+  action: AuthActions.LOGOUT,
+  payload: void
+}
+
+export interface AddShapeAction {
+  action: ShapeActions.ADD,
+  payload: DataShape
+}
+
+export interface GetShapeAction {
+  action: ShapeActions.GET,
+  payload: DataShape[]
+}
+
+export type Actions = LogInAction | LogOutAction | AddShapeAction | GetShapeAction;
