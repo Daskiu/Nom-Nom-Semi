@@ -13,6 +13,7 @@ class Login extends HTMLElement{
     render(){
         if(this.shadowRoot){
             this.shadowRoot.innerHTML =`
+            <my-menu></my-menu>
             <div class="login">
                 <h1>Welcome</h1>
                 <my-input placeholder="Coloca tu nombre"></my-input>

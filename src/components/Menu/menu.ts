@@ -5,7 +5,7 @@ export enum AttributeMenu {
     "profile" = "profile"
 }
 
-class Menu extends HTMLElement{
+export default class Menu extends HTMLElement{
     home?: string;
     search?: string;
     add?: string;
@@ -62,4 +62,3 @@ class Menu extends HTMLElement{
 }
 
 customElements.define("my-menu", Menu);
-export default Menu;
