@@ -1,4 +1,4 @@
-import { AttributeProf } from "../components/Profilecard/profilecard";
+import {AttributeInput} from "../components/export"
 
 class Profile extends HTMLElement{
     constructor(){
@@ -7,7 +7,7 @@ class Profile extends HTMLElement{
     }
 
     async connectedCallback(){
-
+        this.render();
     }
 
     render(){

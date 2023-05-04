@@ -1,4 +1,4 @@
-import {AttributeInput} from "../components/Input/input"
+import {AttributeInput} from "../components/export"
 
 class Login extends HTMLElement{
     constructor(){
@@ -7,7 +7,7 @@ class Login extends HTMLElement{
     }
 
     async connectedCallback(){
-
+    this.render();
     }
 
     render(){
