@@ -1,4 +1,4 @@
-import traer_post from '../services/datapost'
+import Traer_Post from '../services/sshape'
 import { AddShapeAction, AuthActions, GetShapeAction, LogInAction, LogOutAction, ShapeActions } from "../types/store"
 
 
@@ -17,7 +17,7 @@ export const logIn = ({payload}: Pick<LogInAction, "payload">): LogInAction => {
 }
 
 export const getShape = async (): Promise<GetShapeAction> => {
-    const Shape = await traer_post();
+    const Shape = await Traer_Post.get();
     return {
         action: ShapeActions.GET,
         payload: Shape

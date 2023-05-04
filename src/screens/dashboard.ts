@@ -18,7 +18,7 @@ class Dashboard extends HTMLElement {
   }
 
   render() {
-    
+
   }
 }
 

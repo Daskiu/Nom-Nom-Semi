@@ -49,7 +49,6 @@ export default class Profilecard extends HTMLElement{
     render(){
         if(this.shadowRoot){
             this.shadowRoot.innerHTML=`
-
             `;
         }
     }
