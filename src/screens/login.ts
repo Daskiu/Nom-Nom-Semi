@@ -1,4 +1,6 @@
 import {AttributeInput} from "../components/export"
+import { getShape } from "../store/actions";
+import { addObserver, appState, dispatch } from "../store/index";
 
 class Login extends HTMLElement{
     constructor(){
@@ -6,13 +8,21 @@ class Login extends HTMLElement{
         this.attachShadow({mode:"open"});
     }
 
-    async connectedCallback(){
-    this.render();
-    }
-
+    async connectedCallback() {
+        if (appState.shape.length === 0) {
+          const action = await getShape();
+          dispatch(action);
+        } else {
+          this.render();
+        }
+      }
     render(){
         if(this.shadowRoot){
             this.shadowRoot.innerHTML =`
+            `;
+        }
+        if(this.shadowRoot){
+            this.shadowRoot.innerHTML +=`
             <my-menu></my-menu>
             <div class="login">
                 <h1>Welcome</h1>

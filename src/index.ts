@@ -1,5 +1,10 @@
 import "./components/export"
 import "./screens/dashboard"
+import "./screens/add"
+import "./screens/login"
+import "./screens/profile"
+import "./screens/register"
+import "./screens/search"
 
 class AppContainer extends HTMLElement {
     constructor(){
@@ -12,7 +17,7 @@ class AppContainer extends HTMLElement {
     }
 
     render() {
-        const something = this.ownerDocument.createElement('app-dashboard');
+        const something = this.ownerDocument.createElement('my-add');
         this.shadowRoot?.appendChild(something);
     }
 }
