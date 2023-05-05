@@ -1,3 +1,4 @@
+import addcard from "./addcard.css"
 export enum AttributeProfadd {
     "name" = "name",
     "description" = "description",

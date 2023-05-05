@@ -1,3 +1,4 @@
+import post from "./post.css"
 export enum AttributePost{
     "profileimg" = "profileimg",
     "name" = "name",

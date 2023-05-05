@@ -1,10 +1,10 @@
 import "./components/export"
-import "./screens/dashboard"
-import "./screens/add"
-import "./screens/login"
-import "./screens/profile"
-import "./screens/register"
-import "./screens/search"
+import "./screens/dashboard/dashboard"
+import "./screens/add/add"
+import "./screens/login/login"
+import "./screens/profile/profile"
+import "./screens/register/register"
+import "./screens/search/search"
 
 class AppContainer extends HTMLElement {
     constructor(){

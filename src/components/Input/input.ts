@@ -1,3 +1,4 @@
+import input from "./input.css"
 export enum AttributeInput {
     "PlaceHolder" = "PlaceHolder",
 }

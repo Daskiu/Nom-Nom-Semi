@@ -1,3 +1,4 @@
+import menu from "./menu.css"
 export enum AttributeMenu {
     "home" = "home",
     "search" = "search",

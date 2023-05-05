@@ -1,3 +1,4 @@
+import profilecard from "./profilecard.css"
 export enum AttributeProf {
     "name" = "name",
     "description" = "description",
