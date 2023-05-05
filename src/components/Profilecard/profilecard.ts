@@ -59,6 +59,9 @@ export default class Profilecard extends HTMLElement{
             </div>
             `;
         }
+        const css = this.ownerDocument.createElement("style");
+        css.innerHTML = profilecard;
+        this.shadowRoot?.appendChild(css);
     }
 }
 
