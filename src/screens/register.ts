@@ -1,6 +1,6 @@
 import {AttributeInput} from "../components/export"
 
-class Register extends HTMLElement{
+export class Register extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode:"open"});
@@ -27,5 +27,5 @@ class Register extends HTMLElement{
         }
     }
 }
-
+export default Register;
 customElements.define("my-register", Register);

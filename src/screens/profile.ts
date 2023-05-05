@@ -1,6 +1,6 @@
 import {AttributeInput} from "../components/export"
 
-class Profile extends HTMLElement{
+export class Profile extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode:"open"});
@@ -19,5 +19,5 @@ class Profile extends HTMLElement{
         }
     }
 }
-
+export default Profile;
 customElements.define("my-profile", Profile);
