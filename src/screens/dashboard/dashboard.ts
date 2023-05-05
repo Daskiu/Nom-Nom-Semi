@@ -18,10 +18,18 @@ class Dashboard extends HTMLElement {
     }
   }
 
-  render() {
-    
-
-  }
+  render(){
+    if(this.shadowRoot){
+        this.shadowRoot.innerHTML =`
+        `;
+    }
+    if(this.shadowRoot){
+        this.shadowRoot.innerHTML +=`
+        <my-menu></my-menu>
+        <my-post></my-post>
+        `;
+    }
+}
 }
 export default Dashboard;
 customElements.define("app-dashboard", Dashboard);
