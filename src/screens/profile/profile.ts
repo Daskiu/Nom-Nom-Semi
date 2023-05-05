@@ -29,6 +29,9 @@ class Profile extends HTMLElement{
             <my-profcard></my-profcard>
             `;
         }
+        const css = this.ownerDocument.createElement("style");
+        css.innerHTML = profile;
+        this.shadowRoot?.appendChild(css);
     }
 }
 export default Profile;

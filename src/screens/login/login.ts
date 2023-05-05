@@ -33,6 +33,9 @@ class Login extends HTMLElement{
             </div>
             `;
         }
+        const css = this.ownerDocument.createElement("style");
+        css.innerHTML = login;
+        this.shadowRoot?.appendChild(css);
     }
 }
 export default Login;

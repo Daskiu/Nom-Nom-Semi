@@ -85,6 +85,9 @@ render() {
             <button id="submit">Submit</button>
           `;
         }
+        const css = this.ownerDocument.createElement("style");
+        css.innerHTML = addcard;
+        this.shadowRoot?.appendChild(css);
     }
 }
 

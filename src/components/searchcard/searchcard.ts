@@ -47,6 +47,9 @@ render(){
         </div>
         `;
     }
+    const css = this.ownerDocument.createElement("style");
+        css.innerHTML = searchcard;
+        this.shadowRoot?.appendChild(css);
 }
 }
 

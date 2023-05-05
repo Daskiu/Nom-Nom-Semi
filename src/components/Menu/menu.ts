@@ -47,18 +47,21 @@ export default class Menu extends HTMLElement{
     render(){
         if (this.shadowRoot){
             this.shadowRoot.innerHTML =`
-            <div id="menu">
+            <div class="menu">
                 <div id="menu2">
-                    <img id="home" src="../Images/Home.png">
-                    <img id="search" src="../Images/Search.png">
-                    </div>
-                    <div id="menu3">
-                    <img id="add" src="../Images/Save.png">
-                    <img id="profile" src="../Images/profile.png">
-                    </div>
+                    <img id="home" src="/Images/Home.png">
+                    <img id="search" src="/Images/Search.png">
                 </div>
+                <div id="menu3">
+                    <img id="add" src="/Images/Save.png">
+                    <img id="profile" src="/Images/profile.png">
+                </div>
+            </div>
             `
         }
+        const css = this.ownerDocument.createElement("style");
+        css.innerHTML = menu;
+        this.shadowRoot?.appendChild(css);
     }
 }
 

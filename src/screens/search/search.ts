@@ -29,6 +29,9 @@ class Search extends HTMLElement{
           <my-searchcard></my-searchcard>
           `;
       }
+      const css = this.ownerDocument.createElement("style");
+      css.innerHTML = search;
+      this.shadowRoot?.appendChild(css);
     }
 }
 

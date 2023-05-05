@@ -32,6 +32,9 @@ class add extends HTMLElement{
             <my-addcard></my-addcard>
             `;
         }
+        const css = this.ownerDocument.createElement("style");
+        css.innerHTML = addc;
+        this.shadowRoot?.appendChild(css);
     }
 }
 export default add;

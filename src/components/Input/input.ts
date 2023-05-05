@@ -40,6 +40,9 @@ export default class Input extends HTMLElement{
                 <input placeholder="${this.PlaceHolder}"></input>
             `;
         }
+        const css = this.ownerDocument.createElement("style");
+        css.innerHTML = input;
+        this.shadowRoot?.appendChild(css);
     }
 }
 

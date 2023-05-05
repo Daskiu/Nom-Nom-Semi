@@ -37,6 +37,9 @@ class Register extends HTMLElement{
             </div>
             `;
         }
+        const css = this.ownerDocument.createElement("style");
+        css.innerHTML = register;
+        this.shadowRoot?.appendChild(css);
     }
 }
 export default Register;

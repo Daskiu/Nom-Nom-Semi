@@ -65,7 +65,10 @@ export default class Post extends HTMLElement{
                 </div>
             </div>
             `
-        } 
+        }
+        const css = this.ownerDocument.createElement("style");
+        css.innerHTML = post;
+        this.shadowRoot?.appendChild(css);
     }
 }
 
