@@ -2,7 +2,7 @@ import Menu, {AttributeMenu } from "../../components/Menu/menu";
 import addcard, {AttributeProfadd} from "../../components/addcard/addcard";
 import { getShape } from "../../store/actions";
 import { addObserver, appState, dispatch } from "../../store/index";
-import addc from "./add.css"
+import addc from "./addc.css"
 
 
 
