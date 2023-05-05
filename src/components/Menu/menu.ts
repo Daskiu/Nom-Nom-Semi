@@ -49,12 +49,12 @@ export default class Menu extends HTMLElement{
             this.shadowRoot.innerHTML =`
             <div id="menu">
                 <div id="menu2">
-                    <img id="home" src="${this.home}">
-                    <img id="search" src="${this.search}">
+                    <img id="home" src="../Images/Home.png">
+                    <img id="search" src="../Images/Search.png">
                     </div>
                     <div id="menu3">
-                    <img id="add" src="${this.add}">
-                    <img id="profile" src="${this.profile}">
+                    <img id="add" src="../Images/Save.png">
+                    <img id="profile" src="../Images/profile.png">
                     </div>
                 </div>
             `

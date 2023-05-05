@@ -17,7 +17,7 @@ class AppContainer extends HTMLElement {
     }
 
     render() {
-        const something = this.ownerDocument.createElement('my-add');
+        const something = this.ownerDocument.createElement('my-profile');
         this.shadowRoot?.appendChild(something);
     }
 }

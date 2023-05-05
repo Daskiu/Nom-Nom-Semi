@@ -20,11 +20,15 @@ class Search extends HTMLElement{
 
     render(){
         if(this.shadowRoot){
-            this.shadowRoot.innerHTML=`
-            <my-menu></my-menu>
-            <my-searchcard></my-searchcard>
-            `;
+            this.shadowRoot.innerHTML=``;
         }
+
+        if(this.shadowRoot){
+          this.shadowRoot.innerHTML+=`
+          <my-menu></my-menu>
+          <my-searchcard></my-searchcard>
+          `;
+      }
     }
 }
 

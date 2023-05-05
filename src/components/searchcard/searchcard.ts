@@ -43,7 +43,7 @@ render(){
         this.shadowRoot.innerHTML=`
         <div id="searchbar">
             <input id="search" type="text">
-            <img src="${this.search}">
+            <img src="../Images/Search.png">
         </div>
         `;
     }
