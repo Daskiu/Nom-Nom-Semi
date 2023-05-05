@@ -1,6 +1,6 @@
 import  {AttributeProfadd} from "../components/export"
 
-export class add extends HTMLElement{
+class add extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode:"open"});

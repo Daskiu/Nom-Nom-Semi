@@ -1,7 +1,7 @@
 import { getShape } from "../store/actions";
 import { addObserver, appState, dispatch } from "../store/index";
 
-export class Dashboard extends HTMLElement {
+class Dashboard extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });

@@ -1,6 +1,6 @@
 import {AttributeInput} from "../components/export"
 
-export class Login extends HTMLElement{
+class Login extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode:"open"});
