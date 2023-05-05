@@ -50,7 +50,6 @@ export default class Profilecard extends HTMLElement{
     render(){
         if(this.shadowRoot){
             this.shadowRoot.innerHTML=`
-            <my-menu></my-menu>
             <div>
                 <img src="${this.photo}">
                 <h1>${this.name}</h1>

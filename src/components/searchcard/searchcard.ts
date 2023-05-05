@@ -41,17 +41,13 @@ attributeChangedCallback(
 render(){
     if(this.shadowRoot){
         this.shadowRoot.innerHTML=`
-        <my-menu></my-menu>
         <div id="searchbar">
             <input id="search" type="text">
             <img src="${this.search}">
-        </div>
-        <div id="searched">
-            <img src="${this.img}">
         </div>
         `;
     }
 }
 }
 
-customElements.define("my-search", Searchcard);
+customElements.define("my-searchcard", Searchcard);
