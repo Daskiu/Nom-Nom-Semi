@@ -19,6 +19,7 @@ class Profile extends HTMLElement{
       }
 
       render(){
+        
         if(this.shadowRoot){
             this.shadowRoot.innerHTML =`
             `;

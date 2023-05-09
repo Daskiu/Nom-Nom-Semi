@@ -29,7 +29,7 @@ class add extends HTMLElement{
         if(this.shadowRoot){
             this.shadowRoot.innerHTML +=`
             <my-menu></my-menu>
-            <my-addcard></my-addcard>
+            <my-addcard id="Card"></my-addcard>
             `;
         }
         const css = this.ownerDocument.createElement("style");

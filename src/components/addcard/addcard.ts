@@ -69,7 +69,8 @@ export enum AttributeProfadd {
 render() {
         if (this.shadowRoot) {
           this.shadowRoot.innerHTML = `
-            <label for="title">Title</label>
+            <div class="todo">
+          <label for="title">Title</label>
             <input id="title" type="text" value="${this.name ?? ""}">
             <label for="meal">Meal</label>
             <select id="meal">
@@ -83,6 +84,7 @@ render() {
             <input id="photo" type="text" value="${this.photo ?? ""}">
             <img src="${this.photo ?? ""}">
             <button id="submit">Submit</button>
+            </div>
           `;
         }
         const css = this.ownerDocument.createElement("style");

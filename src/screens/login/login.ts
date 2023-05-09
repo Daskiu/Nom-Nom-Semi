@@ -27,9 +27,11 @@ class Login extends HTMLElement{
             <my-menu></my-menu>
             <div class="login">
                 <h1>Welcome</h1>
-                <my-input placeholder="Coloca tu nombre"></my-input>
-                <my-input placeholder="Coloca tu contraseña"></my-input>
-                <button class="button">Login</button>
+                <div class = "campo">
+                    <my-input placeholder="Coloca tu nombre"></my-input>
+                    <my-input placeholder="Coloca tu contraseña"></my-input>
+                    <button class="button">Login</button>
+                </div>
             </div>
             `;
         }

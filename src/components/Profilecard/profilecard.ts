@@ -2,7 +2,7 @@ import profilecard from "./profilecard.css"
 export enum AttributeProf {
     "name" = "name",
     "description" = "description",
-    "photo" = "photo",
+    "profileimg" = "profileimg",
     "ranking" = "ranking",
     "verified" = "verified",
 }
@@ -10,7 +10,7 @@ export enum AttributeProf {
 export default class Profilecard extends HTMLElement{
     name?: string;
     description?: string;
-    photo?: string;
+    profileimg?: string;
     ranking?: string;
     verified?: string;
 
@@ -18,7 +18,7 @@ export default class Profilecard extends HTMLElement{
         const attrs: Record<AttributeProf, null> ={
             name: null,
             description: null,
-            photo: null,
+            profileimg: null,
             ranking: null,
             verified: null,
         };
@@ -50,8 +50,9 @@ export default class Profilecard extends HTMLElement{
     render(){
         if(this.shadowRoot){
             this.shadowRoot.innerHTML=`
+            <my-menu></my-menu>
             <div>
-                <img src="${this.photo}">
+                <img src="${this.profileimg}">
                 <h1>${this.name}</h1>
                 <p>${this.description}</p>
                 <img src="${this.ranking}">
