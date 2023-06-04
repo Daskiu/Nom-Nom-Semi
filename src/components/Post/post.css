@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  padding-top: 50px;
+  margin-top: 3%;
+}
+
+.red-div {
+  position: relative;
+  border: 1px solid #fdb6c5;
+  background-color: #fff5f7;
+  border-radius: 12px;
+  width: 300px;
+  padding: 16px;
+  animation: fade-in 1s ease-out, scale-up 0.5s ease-in-out;
+}
+
+.red-div .title {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.red-div img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100% - 96px);
+  margin-bottom: 16px;
+  animation: slide-in 0.5s ease-out;
+}
+
+.red-div .content {
+  display: flex;
+  justify-content: space-between;
+  animation: fade-in 1s ease-out;
+}
+
+.red-div .icon-value {
+  display: flex;
+  align-items: center;
+  animation: fade-in 1s ease-out;
+}
+
+.red-div .icon-value img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  animation: spin 2s linear infinite;
+}
+
+.red-div .icon-value span {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  animation: fade-in 1s ease-out;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  animation: fade-in 1s ease-out;
+}
+
+.title-container img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  animation: slide-in 0.5s ease-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
