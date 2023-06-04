@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+  }
+ 
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    padding-top: 30vh;
+  }
+  
+  .red-div {
+    position: relative;
+    border: 1px solid #fdb6c5;
+    background-color: #fff5f7;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+    padding: 16px;
+  }
+  
+  .red-div .title {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .container input[type="text"],
+  .container input[type="password"], .container input[type="file"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .container button {
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    color: palevioletred;
+    background-color: pink;
+    border-color: papayawhip;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  form {
+    text-align: center;
+  }
+  
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .input-row input[type="text"],
+  .input-row input[type="password"] {
+    width: 48%; /* Ancho de los inputs en la misma fila */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .input-container {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .input-container input[type="text"],
+  .input-container input[type="password"] {
+    width: 100%; /* Ancho completo para los inputs en una fila */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
