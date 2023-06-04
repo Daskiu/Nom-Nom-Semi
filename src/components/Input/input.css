@@ -1,0 +1,66 @@
+input {
+  font-size: 18px;
+  padding: 12px 20px;
+  border: 2px solid #F5A9BC;
+  border-radius: 5px;
+  background-color: #FDEEF4;
+  color: #6B0D29;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #FA5882;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-input-placeholder {
+  color: #D985A7;
+  transition: color 0.3s ease;
+}
+:-moz-placeholder {
+  color: #D985A7;
+  transition: color 0.3s ease;
+}
+::-moz-placeholder {
+  color: #D985A7;
+  transition: color 0.3s ease;
+}
+:-ms-input-placeholder {
+  color: #D985A7;
+  transition: color 0.3s ease;
+}
+
+/* Agregar animación al cambio de color del placeholder */
+input:focus::-webkit-input-placeholder {
+  color: #FA5882;
+}
+input:focus:-moz-placeholder {
+  color: #FA5882;
+}
+input:focus::-moz-placeholder {
+  color: #FA5882;
+}
+input:focus:-ms-input-placeholder {
+  color: #FA5882;
+}
+
+/* Agregar animación al cambio de borde y sombra */
+input {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #FA5882;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Agregar animación al tamaño de fuente */
+input {
+  transition: font-size 0.3s ease;
+}
+
+input:focus {
+  font-size: 20px;
+}
