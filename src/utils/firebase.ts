@@ -8,12 +8,7 @@ import { navigate } from "../store/actions";
 import { Screens } from "../types/navigation";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCVzUUlvabAnBHZl1uOFBSRXjLb5L4Ql8g",
-  authDomain: "nomnom2-b711e.firebaseapp.com",
-  projectId: "nomnom2-b711e",
-  storageBucket: "nomnom2-b711e.appspot.com",
-  messagingSenderId: "674242458514",
-  appId: "1:674242458514:web:bda0c2606188500c84c74b"
+
 };
 const firebaseApp = initializeApp(firebaseConfig);
 
